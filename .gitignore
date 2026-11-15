@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+
+# Build files
+dist/
+build/
+target/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# Java
+*.class
+
+# OS
+.DS_Store
+Thumbs.db

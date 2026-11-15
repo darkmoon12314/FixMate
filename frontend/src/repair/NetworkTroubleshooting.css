@@ -1,0 +1,283 @@
+
+.network-page {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+  color: #1f2937;
+}
+
+.network-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.network-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.network-header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.network-header p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.network-info-card,
+.network-result-card,
+.network-repair-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.network-info-card h2,
+.network-results h2,
+.network-repair-card h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.network-info-card p,
+.network-repair-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.network-primary-btn,
+.network-repair-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.network-primary-btn {
+  background: #2563eb;
+}
+
+.network-repair-btn {
+  background: #ea580c;
+}
+
+.network-primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.network-repair-btn:hover {
+  background: #c2410c;
+}
+
+.network-primary-btn:disabled,
+.network-repair-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.network-alert {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.error-alert {
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.success-alert {
+  color: #166534;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.network-results {
+  margin-top: 30px;
+}
+
+.network-checked-time {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.network-result-card h3 {
+  color: #334155;
+  margin-top: 0;
+}
+
+.network-result-card p {
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.network-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.network-detail:last-child {
+  border-bottom: none;
+}
+
+.network-status {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.network-status.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.network-status.failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.network-addresses {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.network-addresses p {
+  margin: 6px 0;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.network-note {
+  padding: 14px;
+  background: #eff6ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+  color: #1e40af;
+  line-height: 1.6;
+}
+
+.network-repair-card {
+  border-left: 4px solid #ea580c;
+  margin-top: 30px;
+}
+
+.network-repair-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* DNS success message inside DNS Cleanup card */
+.dns-success-message {
+  margin-top: 18px;
+  padding: 16px;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  color: #166534;
+  animation: dnsSuccess 0.3s ease-in-out;
+  overflow-wrap: anywhere;
+}
+
+.dns-success-message strong {
+  display: block;
+  color: #166534;
+  font-size: 16px;
+}
+
+.dns-success-message p {
+  margin: 8px 0;
+  color: #166534;
+  line-height: 1.5;
+}
+
+.dns-success-message small {
+  display: block;
+  color: #15803d;
+  margin-top: 8px;
+}
+
+/* DNS error message inside DNS Cleanup card */
+.dns-error-message {
+  margin-top: 18px;
+  padding: 16px;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  color: #991b1b;
+  overflow-wrap: anywhere;
+}
+
+.dns-error-message strong {
+  display: block;
+  color: #991b1b;
+}
+
+.dns-error-message p {
+  margin-bottom: 0;
+  color: #991b1b;
+  line-height: 1.5;
+}
+
+.network-repair-help {
+  display: block;
+  color: #64748b;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+@keyframes dnsSuccess {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .network-page {
+    padding: 14px;
+    margin: 20px auto;
+  }
+
+  .network-header h1 {
+    font-size: 24px;
+  }
+
+  .network-info-card,
+  .network-result-card,
+  .network-repair-card {
+    padding: 17px;
+  }
+
+  .network-primary-btn,
+  .network-repair-btn {
+    width: 100%;
+  }
+}

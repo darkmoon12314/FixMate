@@ -1,0 +1,256 @@
+
+.diagnostics-page {
+  padding: 35px;
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+.diagnostics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.diagnostics-label {
+  color: #0066cc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.diagnostics-header h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.diagnostics-header p,
+.section-description {
+  color: #64748b;
+}
+
+.diagnostics-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.diagnostics-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.diagnostics-empty,
+.system-info-card,
+.diagnostic-card,
+.health-card,
+.finding-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.diagnostics-empty {
+  text-align: center;
+  padding: 65px 20px;
+  color: #64748b;
+}
+
+.diagnostics-empty h2 {
+  color: #1a1a1a;
+}
+
+.system-info-card h2 {
+  margin-top: 0;
+}
+
+.health-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.health-card h2 {
+  margin: 8px 0;
+}
+
+.health-card p:last-child {
+  color: #64748b;
+}
+
+.health-score {
+  min-width: 115px;
+  height: 115px;
+  border: 7px solid #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #059669;
+}
+
+.health-score span {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.health-score small {
+  font-size: 13px;
+}
+
+.diagnostics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.diagnostic-card {
+  margin-bottom: 0;
+}
+
+.metric-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0066cc;
+}
+
+.metric-heading h3 {
+  color: #475569;
+  font-size: 16px;
+}
+
+.metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0066cc;
+  margin: 15px 0;
+}
+
+.metric-details {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.metric-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.analysis-section {
+  margin-top: 35px;
+}
+
+.analysis-section h2 {
+  margin-bottom: 8px;
+}
+
+.finding-card {
+  margin-top: 15px;
+}
+
+.finding-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.finding-heading h3 {
+  flex: 1;
+  margin: 0;
+}
+
+.finding-heading svg {
+  color: #d97706;
+}
+
+.finding-card > p {
+  color: #64748b;
+  margin: 15px 0;
+}
+
+.severity {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.severity.normal {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.severity.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.severity.high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.recommendation {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.recommendation p {
+  margin-bottom: 0;
+  color: #475569;
+}
+
+.diagnostics-error {
+  padding: 15px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.diagnostics-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .diagnostics-page {
+    padding: 20px;
+  }
+
+  .diagnostics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .health-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
